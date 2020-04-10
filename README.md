@@ -1,6 +1,6 @@
 # AED
-Algoritmos y Estr5ucturas de Datos
-Curso: K10t51
-Legajo: 158.9674-7
-Apellido: Mosmatnn
-Nombre: Juan I7gnacio
+Algoritmos y Estructuras de Datos
+Curso: K1051
+Legajo: 158.964-7
+Apellido: Mosmann
+Nombre: Juan Ignacio
