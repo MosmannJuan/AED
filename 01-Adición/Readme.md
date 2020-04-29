@@ -5,7 +5,7 @@
 
 # Trabajo N° 1: "Resolución de problemas - Adición"
 
-#Etapa 1: Análisis del problema.
+# Etapa 1: Análisis del problema.
 ## Enunciado: Mostrar la suma de dos números enteros que ingresa el usuario.
 ## Se deberá desarrollar en C++ un código que pida al usuario ingresar dos números enteros, realice la suma de ellos y luego imprima en pantalla el resultado.
 ## Modelo IPO: Z x Z → Suma → Z
