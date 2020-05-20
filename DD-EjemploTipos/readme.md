@@ -2,9 +2,7 @@
 
 ### Autor de la resolución: Mosmann, Juan Ignacio.
 
-### Objetivos del trabajo: Diseñar un programa C++ que ejemplifique la aplicación de los tipos de datos
-vistos en clases (unsigned, int, double, bool, char y string), sin extraer valores de cin (sólo usar valores constantes) y, en lo posible, no utilizar cout, y hacer las pruebas 
-con assert.
+### Objetivos del trabajo: Diseñar un programa C++ que ejemplifique la aplicación de los tipos de datos vistos en clases (unsigned, int, double, bool, char y string), sin extraer valores de cin (sólo usar valores constantes) y, en lo posible, no utilizar cout, y hacer las pruebas con assert.
 
 ### Resolución: 
 #### Para la variable double se propuso aplicarlas al cálculo del área de una circunferencia de radio 2.5, para el valor de pi tomamos 16 decimales que son las que acepta el tipo de variable, para las pruebas utilizamos assert poniendo como condicion que el valor total del área no debe ser mayor a 20.
