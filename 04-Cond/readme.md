@@ -53,11 +53,11 @@
 
 #### Representación visual 
 
-<center>
+<p align="center">
 
 ![Abs](https://user-images.githubusercontent.com/63465251/83683032-1ea7c400-a5bb-11ea-849e-e6abae5ea228.jpg)
 
-</center>
+</p>
 
 ## **Función Min:**
 
@@ -65,11 +65,11 @@
 
 #### Representación visual 
 
-<center>
+<p align="center">
 
 ![Min](https://user-images.githubusercontent.com/63465251/83683093-37b07500-a5bb-11ea-8b31-cb2b4c14c4c0.jpg)
 
-</center>
+</p>
 
 ## **Función f3:**
 
@@ -77,8 +77,8 @@
 
 #### Representación visual 
 
-<center>
+<p align:"center">
 
 ![F3](https://user-images.githubusercontent.com/63465251/83683152-50b92600-a5bb-11ea-9ac0-555cc7b15c75.jpg)
 
-</center>
+</p>
