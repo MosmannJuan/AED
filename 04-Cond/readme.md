@@ -1,16 +1,16 @@
-#Autor de la resolución: 
+# **Autor de la resolución:** 
 
 ##**Ususario Github:** MosmannJuan
 
-##Mosmann, Juan Ignacio
+## Mosmann, Juan Ignacio
 
-##**Legajo N°** 158.964-7
+## **Legajo N°** 158.964-7
 
 ## **Trabajo Práctico N°4:** "Funciones y Operador Condicional"
   
 ###**Etapa 1: Análisis del problema.**
 
-####Enunciado: Desarrollar las siguientes funciones: 
+#### **Enunciado:** Desarrollar las siguientes funciones: 
 - Valor absoluto.
 - Valor mínimo entre dos valores.
 - Función f3 definida por:
@@ -21,37 +21,37 @@
 
 </center>
 
-####Restricciónes: 
+#### Restricciónes: 
 -Las pruebas deben realizarse con assert.
 -Cada función debe aplicar el operador condicional.
 
-####(Para realizar los análisis se efectuarán separados para cada una de las funciones).
+#### (Para realizar los análisis se efectuarán separados para cada una de las funciones).
 
-##**Función Abs:**
+## **Función Abs:**
 
-####Hipótesis: Se definirá una función con dominio en los números enteros, que devuelva el módulo del mismo. Se realizarán pruebas de su correcto funcionamiento mediante assert.
+#### Hipótesis: Se definirá una función con dominio en los números enteros, que devuelva el módulo del mismo. Se realizarán pruebas de su correcto funcionamiento mediante assert.
 
-####Modelo IPO: Z → Valor Absoluto → Z
+#### Modelo IPO: Z → Valor Absoluto → Z
 
-##**Función Min:**
+## **Función Min:**
 
-####Hipótesis: Se definirá una función que recibirá dos valores enteros, los compare y luego devuelva el menor valor de esos dos. Se realizarán pruebas de su correcto funcionamiento mediante assert.
+#### Hipótesis: Se definirá una función que recibirá dos valores enteros, los compare y luego devuelva el menor valor de esos dos. Se realizarán pruebas de su correcto funcionamiento mediante assert.
 
-####Modelo IPO: ZxZ → Comparación → Z
+#### Modelo IPO: ZxZ → Comparación → Z
 
-##**Función f3:**
+## **Función f3:**
 
-####Hipótesis: Se difinirá una función que recibirá un valor del tipo real, verifique el intervalo al que pertenece y luego devuelva otro valor real correspondiente con el gráfico previo. Se realizarán pruebas de su correcto funcionamiento mediante assert.
+#### Hipótesis: Se difinirá una función que recibirá un valor del tipo real, verifique el intervalo al que pertenece y luego devuelva otro valor real correspondiente con el gráfico previo. Se realizarán pruebas de su correcto funcionamiento mediante assert.
 
-####Modelo IPO: R → Verificación del intervalo → R
+#### Modelo IPO: R → Verificación del intervalo → R
 
-###**Etapa 2: Diseño de la solución**
+### **Etapa 2: Diseño de la solución**
 
-##**Función Abs:**
+## **Función Abs:**
 
-####Léxico del algoritmo: x ∈ Z
+#### Léxico del algoritmo: x ∈ Z
 
-####Representación visual 
+#### Representación visual 
 
 <center>
 
@@ -59,11 +59,11 @@
 
 </center>
 
-##**Función Min:**
+## **Función Min:**
 
-####Léxico del algoritmo: a, b ∈ Z
+#### Léxico del algoritmo: a, b ∈ Z
 
-####Representación visual 
+#### Representación visual 
 
 <center>
 
@@ -71,11 +71,11 @@
 
 </center>
 
-##**Función f3:**
+## **Función f3:**
 
-####Léxico del algoritmo: x ∈ R
+#### Léxico del algoritmo: x ∈ R
 
-####Representación visual 
+#### Representación visual 
 
 <center>
 
