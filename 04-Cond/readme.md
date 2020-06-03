@@ -1,6 +1,6 @@
 # **Autor de la resolución:** 
 
-##**Ususario Github:** MosmannJuan
+## **Ususario Github:** MosmannJuan
 
 ## Mosmann, Juan Ignacio
 
@@ -8,7 +8,7 @@
 
 ## **Trabajo Práctico N°4:** "Funciones y Operador Condicional"
   
-###**Etapa 1: Análisis del problema.**
+### **Etapa 1: Análisis del problema.**
 
 #### **Enunciado:** Desarrollar las siguientes funciones: 
 - Valor absoluto.
