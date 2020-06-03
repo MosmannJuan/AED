@@ -15,11 +15,11 @@
 - Valor mínimo entre dos valores.
 - Función f3 definida por:
 
-<center>
+<p align = "center">
 
 ![Enunciado f3](https://user-images.githubusercontent.com/63465251/83682639-96292380-a5ba-11ea-8615-946ff11e15ae.jpg)
 
-</center>
+</p>
 
 #### Restricciónes: 
 - Las pruebas deben realizarse con assert.
@@ -53,7 +53,7 @@
 
 #### Representación visual 
 
-<p align="center">
+<p align = "center">
 
 ![Abs](https://user-images.githubusercontent.com/63465251/83683032-1ea7c400-a5bb-11ea-849e-e6abae5ea228.jpg)
 
@@ -65,7 +65,7 @@
 
 #### Representación visual 
 
-<p align="center">
+<p align = "center" >
 
 ![Min](https://user-images.githubusercontent.com/63465251/83683093-37b07500-a5bb-11ea-8b31-cb2b4c14c4c0.jpg)
 
@@ -77,7 +77,7 @@
 
 #### Representación visual 
 
-<p align:"center">
+<p align = "center" >
 
 ![F3](https://user-images.githubusercontent.com/63465251/83683152-50b92600-a5bb-11ea-9ac0-555cc7b15c75.jpg)
 
