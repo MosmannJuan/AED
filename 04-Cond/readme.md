@@ -22,8 +22,8 @@
 </center>
 
 #### Restricciónes: 
--Las pruebas deben realizarse con assert.
--Cada función debe aplicar el operador condicional.
+- Las pruebas deben realizarse con assert.
+- Cada función debe aplicar el operador condicional.
 
 #### (Para realizar los análisis se efectuarán separados para cada una de las funciones).
 
