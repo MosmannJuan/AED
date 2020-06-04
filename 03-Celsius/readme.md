@@ -15,8 +15,8 @@ equivalente en Celsius.
 
 ### Problemas: 
 ### Hay dos sub-problemas que se requieren solucionar antes de poder probar e implementar la función Celsius:
-• Valor de la fracción versus la división entera de la expresión 5/9 en C++
-• Representación no precisa de los tipos flotantes.
+-Valor de la fracción versus la división entera de la expresión 5/9 en C++
+- Representación no precisa de los tipos flotantes.
 
 ###Una solución al primer problema es realizar división entre flotantes. Para el segundo problema, debemos incorporar la comparación con tolerancia, para eso debemos diseñar una función bool que reciba dos flotantes a comparar y un flotante que repesente la tolerancia.
 
