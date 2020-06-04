@@ -30,7 +30,7 @@
 ### **Etapa 2: Diseño de la solución.**
 
 #### Léxico del algoritmo: 
-- **celsius:** f ∈ R
+- **celsius:** f, c ∈ R
 - **AreNear:** c, x, tol ∈ R
 
 #### Representación visual:
