@@ -18,7 +18,7 @@ equivalente en Celsius.
 -Valor de la fracción versus la división entera de la expresión 5/9 en C++
 - Representación no precisa de los tipos flotantes.
 
-###Una solución al primer problema es realizar división entre flotantes. Para el segundo problema, debemos incorporar la comparación con tolerancia, para eso debemos diseñar una función bool que reciba dos flotantes a comparar y un flotante que repesente la tolerancia.
+### Una solución al primer problema es realizar división entre flotantes. Para el segundo problema, debemos incorporar la comparación con tolerancia, para eso debemos diseñar una función bool que reciba dos flotantes a comparar y un flotante que repesente la tolerancia.
 
 #### Hipótesis: Se definirá una función **celsius** que tome un valor real, que representa a la temperatura en grados farenheit, y retorne otro valor real que represente la temperatura en grados celsius. 
 #### Para verificar que el valor real obtenido se encuentra dentro de los valores esperados se definirá otra funcion **AreNear** que tome 3 valores reales, siendo uno de ellos el obtenido por la función anterior, que compare los valores y que retorne un valor booleano que verifica si respeta la tolerancia definida.
