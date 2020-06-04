@@ -31,7 +31,7 @@ equivalente en Celsius.
 ### **Etapa 2: Diseño de la solución.**
 
 #### Léxico del algoritmo: 
-- **celsius:** f, c ∈ R
+- **celsius:** f ∈ R
 - **AreNear:** c, x, tol ∈ R
 
 #### Representación visual:
