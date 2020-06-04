@@ -37,6 +37,8 @@ equivalente en Celsius.
 #### Representación visual:
 
 <p align = "center">
+  
 ![Celsius](https://user-images.githubusercontent.com/63465251/83701544-54ab6f00-a5e0-11ea-91f4-3090d7d0a749.jpg)
+
 </p>
 
