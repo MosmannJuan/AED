@@ -24,5 +24,5 @@ int main() {
 }
 
 bool IsBisiesto(unsigned anio){
-return anio >= 1582 and anio % 4 == 0 and (anio % 100 != 0 or anio % 400 == 0); //Se pide que cumpla las siguientes condiciones: que sea mayor o igual a 1582, que sea divisible por 4 y que a la vez, o no sea divisible por 100 o sea divisible por 400
+return anio >= 1582 and anio % 4 == 0 and (anio % 100 != 0 or anio % 400 == 0); //Se pide que cumpla las siguientes condiciones: que sea mayor o igual a 1582, que sea divisible por 4 y que, a la vez, o no sea divisible por 100 o sea divisible por 400.
 }
