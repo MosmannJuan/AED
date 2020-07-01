@@ -22,61 +22,61 @@
 
 #### (Para realizar los análisis se efectuarán separados para cada una de las funciones).
 
-## ** Función Div: **
+## **Función Div:**
 
-#### ** Hipótesis: ** Se desarrollará una función recursiva que tome dos valores naturales y retorne el resultado natural de la división entera entre ellos. Las pruebas se desarrollarán utilizando assert.
+#### **Hipótesis:** Se desarrollará una función recursiva que tome dos valores naturales y retorne el resultado natural de la división entera entre ellos. Las pruebas se desarrollarán utilizando assert.
 
-#### ** Modelo IPO: ** N*N → división recursiva → N
-
-
-## ** Función Mcd: **
-
-#### ** Hipótesis: ** Se desarrollará una función recursiva utilizando el Algoritmo de Euclides que tome dos valores enteros y retorne el valor entero correspondiente al MCD entre ellos. Las pruebas se desarrollarán utilizando assert.
-
-#### ** Modelo IPO: ** Z*Z → Algoritmo de Euclides → Z
+#### **Modelo IPO:** N*N → división recursiva → N
 
 
-## ** Función Fact: ** 
+## **Función Mcd:**
 
-#### ** Hipótesis: ** Se desarrollará una función recursiva que tome un valor natural y retorne el valor real de su factorial. Las pruebas se desarrollarán utilizando assert.
+#### **Hipótesis:** Se desarrollará una función recursiva utilizando el Algoritmo de Euclides que tome dos valores enteros y retorne el valor entero correspondiente al MCD entre ellos. Las pruebas se desarrollarán utilizando assert.
 
-#### ** Modelo IPO: ** N → Factorial → R
+#### **Modelo IPO:** Z*Z → Algoritmo de Euclides → Z
 
 
-## ** Función Fib: **
+## **Función Fact:** 
 
-#### ** Hipótesis: ** Se desarrollará una función que tome un valor natural correspondiente a la posición en la serie de Fibonacci y retorne el valor natural correspondiente a dicha posición. Las pruebas se desarrollarán utilizando assert.
+#### **Hipótesis:** Se desarrollará una función recursiva que tome un valor natural y retorne el valor real de su factorial. Las pruebas se desarrollarán utilizando assert.
 
-#### ** Modelo IPO: ** N → Fibonacci → N
+#### **Modelo IPO:** N → Factorial → R
+
+
+## **Función Fib:**
+
+#### **Hipótesis:** Se desarrollará una función que tome un valor natural correspondiente a la posición en la serie de Fibonacci y retorne el valor natural correspondiente a dicha posición. Las pruebas se desarrollarán utilizando assert.
+
+#### **Modelo IPO:** N → Fibonacci → N
 
 
 ### **Etapa 2: Diseño de la solución.**
 
-## ** Función Div: ** 
+## **Función Div:** 
 
 #### Léxico del algoritmo: dividendo, divisor ∈ N
-#### Div: N² → N / Div(dividendo, divisor) =  * 0          si   dividendo < divisor
-####                                          * 1 + Div(x-y,y)  e.o.c
+#### Div: N² → N / Div(dividendo, divisor) =  0          si   dividendo < divisor
+####                                          1 + Div(x-y,y)  e.o.c
 
 
-## ** Función Mcd: **
+## **Función Mcd:**
 
 #### Léxico del algoritmo: x, y ∈ Z 
-#### Mcd:  Z² → Z / Mcd(x,y) = * x      si   y = 0
-####                           * Mcd(y, x%y) e.o.c (x%y representa al resto de la división entera entre x e y)
+#### Mcd:  Z² → Z / Mcd(x,y) =  x      si   y = 0
+####                            Mcd(y, x%y) e.o.c (x%y representa al resto de la división entera entre x e y)
 
 
-## ** Función Fact: **
+## **Función Fact:**
 
 #### Léxico del algoritmo: n ∈ N
-#### Fact: N → R / Fact(n) = * 1           si   n = 0
-####                          * n * Fact(n-1)   e.o.c
+#### Fact: N → R / Fact(n) =   1           si   n = 0
+####                           n * Fact(n-1)   e.o.c
 ##### (se eligió que la función pertenezca a los reales del tipo double en c++ para poder representar números de magnitudes mayores que las que permitiría el tipo int o unsigned)
 
 
 
-## ** Función Fib: **
+## **Función Fib:**
 
 #### Léxico del algoritmo: n ∈ N
-#### Fib: N → N / Fib(n) = * n             si    n < 2
-####                       * Fib(n-1) + Fib(n-2) e.o.c
+#### Fib: N → N / Fib(n) =   n             si    n < 2
+####                         Fib(n-1) + Fib(n-2) e.o.c
