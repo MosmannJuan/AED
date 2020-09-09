@@ -11,9 +11,9 @@
 ## GetDistanciaAlOrigen.
 
 ## Restricciones
-• Las pruebas deben realizarse con assert, sin usar cin ni cout
+### • Las pruebas deben realizarse con assert, sin usar cin ni cout
 
-##Tareas
+## Tareas
 1. Especificar matemáticamente el tipo en Punto.md:
 a. Especificar el conjunto de operaciones.
 b. Especificar el conjunto de valores.
