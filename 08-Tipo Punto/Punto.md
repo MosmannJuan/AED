@@ -4,26 +4,26 @@
 
 # Operaciones:
 
-## SumarPuntos: Punto x Punto → Punto
+* SumarPuntos: Punto x Punto → Punto
 
-## LeerPunto: vacio → Punto
+* LeerPunto: vacio → Punto
 
-## MostrarPunto: Punto → vacio
+* MostrarPunto: Punto → vacio
 
-## ProductoPorEscalar: R x Punto → Punto
+* ProductoPorEscalar: R x Punto → Punto
 
-## GetCuadrante: Punto → CuadrantesyEjes (enumerado)
+* GetCuadrante: Punto → CuadrantesyEjes (enumerado)
 
-## RestarPuntos: Punto x Punto → Punto
+* RestarPuntos: Punto x Punto → Punto
 
-## GetDistancia: Punto x Punto → R
+* GetDistancia: Punto x Punto → R
 
-## GetDistanciaAlOrigen: Punto → R
+* GetDistanciaAlOrigen: Punto → R
 
-## CoordenadasPolares: Punto → Punto
+* CoordenadasPolares: Punto → Punto
 
-## ProductoEscalar: Punto x Punto → R
+* ProductoEscalar: Punto x Punto → R
 
-## MoverPunto: Punto x Punto → Punto
+* MoverPunto: Punto x Punto → Punto
 
-## IsIgual: Punto x Punto → Bool
+* IsIgual: Punto x Punto → Bool
