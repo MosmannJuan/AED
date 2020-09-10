@@ -8,7 +8,7 @@
 
 * LeerPunto: vacio → Punto
 
-* MostrarPunto: Punto → vacio
+* MostrarPunto: Punto → vacio (La funcion no retorna ningun valor pero tiene un efecto de lado)
 
 * ProductoPorEscalar: R x Punto → Punto
 
