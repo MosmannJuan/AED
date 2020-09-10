@@ -27,4 +27,4 @@ b. Especificar el conjunto de valores.
 
 ## Hipótesis de trabajo: Consideramos para su definición al color negro como la ausencia total de color y al color blanco como la suma de todos los colores. 
 
-## Justificación del uso de uint8_t : Se utiliza este tipo de dato ya que el mismo al tratarse de un numero entero sin signo que ocupa 8 bits establece la condición de que los valores  r, g y b deben encontrarse entre 0 y 255.
+## Justificación del uso de uint8_t : Se utiliza este tipo de dato ya que, al tratarse de un número entero sin signo que ocupa 8 bits, establece la condición de que los valores  r, g y b deben encontrarse entre 0 y 255.
