@@ -16,4 +16,6 @@
 
 * GetHtmlHex: Color → String
 
+* GetHtmlrgb: Color → String
+
 * IsIgual: Color → Bool
