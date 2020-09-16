@@ -17,3 +17,7 @@ Polígono = { pol = n, p1, p2, ..., p20, c / n ϵ N con n ϵ [3,20]; p1, p2, ...
 * GetPerimetro: Polígono → R
 
 * IsIgual: Polígono x Polígono → Bool
+#### Sea pol1 = (n1, p1, p2, ... , p20, c1) y pol2 = (n2, q1, q2, ... , q20, c2) ϵ Poligono
+#### IsIguaal (pol1, pol2) =
+##### true                 si n1 = n2 , p1 = q1, p2 = q1, ... , p20 = q20, c1 = c2;
+##### false                e.o.c
