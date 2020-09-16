@@ -26,5 +26,5 @@
 
 #### Sea c1 = (r1, g1, b1) y c2 = (r2, g2, b2) ϵ Color
 #### IsIgual (c1, c2) =  
-#### * true           si r1 = r2, g1 = g2 y b1 = b2
-#### * false          e.o.c
+#### true           si r1 = r2, g1 = g2 y b1 = b2
+#### false          e.o.c
