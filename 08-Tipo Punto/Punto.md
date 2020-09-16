@@ -14,7 +14,7 @@
 
 * ProductoPorEscalar: R x Punto → Punto
 #### Sea k ϵ R y p = (x, y) ϵ Punto
-#### ProductoPorEscalar(k,p) = (a, b) / a = k * x, b = k * y 
+#### ProductoPorEscalar(k, p) = (a, b) / a = k * x, b = k * y 
 
 * GetCuadrante: Punto → CuadrantesyEjes (enumerado)
 
