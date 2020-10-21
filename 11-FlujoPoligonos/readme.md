@@ -36,3 +36,7 @@
 ### Resultados
 
 #### El programa funciona de forma esperada, logrando enviar, extraer y mostrar en pantalla una cantidad indefinida de polígonos extrayendo tanto de forma automática como manual (tanto desde un archivo como por consola a través del uso del teclado)
+
+#### Observaciones: 
+* Se adjunta el archivo datos2.txt ya que es el archivo manual utilizado, se podría modificar tanto como se quiera siempre que se respete el nombre del archivo y el formato para los poligonos y el programa funcionará sin problemas.
+* No se adjunta el archivo datos.txt ya que al ejecutar el programa, el mismo se creará de forma automática.
