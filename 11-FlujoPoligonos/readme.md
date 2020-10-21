@@ -18,7 +18,7 @@
 
 * Polígono 
 * Flujo de Salida
-* EnviarPoligono (EnviarColor + EnviarPuntos)
+* EnviarPoligono (EnviarColor + mientras haya puntos en el polígono: EnviarPunto)
 
 ## **Funciones "Extraer"**
 
@@ -26,7 +26,7 @@
 
 * Flujo de Entrada
 * Mientras pueda extraerpoligono: 
-* ExtraerPoligono (ExtraerColor + ExtraerPuntos(mientras pueda extraer un punto): ExtraerPunto)
+* ExtraerPoligono (ExtraerColor + ExtraerPuntos(mientras pueda extraer un punto): ExtraerPunto + MostrarPoligono)
 
 ## *Problemas encontrados:*
 * Al usar el tipo de datos uint8_t para las coordenadas del color, ExtraerColor solo tomaba un digito de cada numero (Solucionado extrayendo a las coordenadas como int y asignandolas a cada parte del color, de esta forma se realiza el cambio de tipo de dato de forma automática, para enviarlos o mostrarlos, es necesario solicitar que lo hagan en forma de entero, en caso contrario, c++ lo considera como un caracter debido a que ocupa 1 byte).
