@@ -10,7 +10,7 @@
 
 ## *Hipótesis de trabajo:* Se utilizarán las definiciones anteriormente usadas de tipo Punto, tipo Color y tipo Poligono. Se desarrollará la solución del problema mediante la definición de funciones. Para las pruebas se mostrará por pantalla el poligono extraído utilizando una función, verificando que conicida con los polígonos enviados de forma automática y con los polígonos escritos manualmente en archivos distintos.
 
-### **Etapa 2: Diseño de la solución**
+# **Etapa 2: Diseño de la solución**
 
 ## **Funciones "Enviar"**
 
