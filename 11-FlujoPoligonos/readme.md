@@ -29,7 +29,7 @@
 * ExtraerPoligono (ExtraerColor + ExtraerPuntos(mientras pueda extraer un punto): ExtraerPunto)
 
 ## Problemas encontrados: 
-* Al usar el tipo de datos uint_8 para las coordenadas del color, ExtraerColor solo tomaba un digito de cada numero (Solucionado extrayendo a las coordenadas como int y asignandolas a cada parte del color, de esta forma se realiza el cambio de tipo de dato de forma automática, para enviarlos o mostrarlos, es necesario solicitar que lo hagan en forma de entero, en caso contrario, c++ lo considera como un caracter debido a que ocupa 1 byte).
+* Al usar el tipo de datos uint8_t para las coordenadas del color, ExtraerColor solo tomaba un digito de cada numero (Solucionado extrayendo a las coordenadas como int y asignandolas a cada parte del color, de esta forma se realiza el cambio de tipo de dato de forma automática, para enviarlos o mostrarlos, es necesario solicitar que lo hagan en forma de entero, en caso contrario, c++ lo considera como un caracter debido a que ocupa 1 byte).
 * Para poder hacer que las funciones retornen un booleano si se lograba extraer lo solicitado, no basto con solo retornar el istream, se debio agregar delante bool con el nombre del flujo entre parentesis luego.
 * El flujo solo permitía extraer un único polígono. (Esto sucedía porque el flujo quedaba en un estado erróneo al finalizar la extracción del poligono y encontrarse con un problema para seguir "extrayendo poligono", para solucionarlo se debió hacer un "clear" del flujo).
 
