@@ -1,50 +1,9 @@
 /* Mosmann, Juan Ignacio
 AED 2020
-Leer puntos desde un archivo */
+Definición de funciones
+Leer poligonos desde un archivo */
 
-#include <iostream>
-#include <fstream>
-#include <cstdint>
-#include <array>
-
-struct Punto{double x,y;};
-
-//struct Color {uint8_t r, g, b ;}; usando esta definicion de color solo tomaba de a 1 digito para cada coordenada de color
-
-struct Color {unsigned r, g, b ;};
-
-struct Poligono {
-    unsigned n;
-    std::array <Punto, 20> puntos;
-    Color c;};
-
-void MostrarPunto(const Punto&); /*Muestra por la salida estándar un punto con el formato (x,y)*/
-
-std::string GetHtmlrgb (Color); //Se usa para mostrar el color
-
-bool ExtraerPunto(std::istream&, Punto&);
-
-bool ExtraerPuntos(std::istream&, Poligono&);
-
-bool ExtraerColor(std::istream&, Color&);
-
-void AddVertice (Poligono&, const Punto&); //Agrega al final del array de puntos del poligono el punto ingresado en el argumento
-
-void ExtraerPoligono(std::istream&, Poligono&);
-
-void MostrarPoligono(const Poligono&);
-
-int main(){
-    std::ifstream in ("datos.txt");
-    Poligono pol;
-    pol.n = 0;
-
-    ExtraerPoligono(in, pol);
-
-    MostrarPoligono(pol);
-
-
-}
+#include "FlujoPoligonos.h"
 
 void MostrarPoligono(const Poligono& pol){
     std::cout <<"El poligono posee " << pol.n <<" lados." <<"\n";
@@ -58,7 +17,7 @@ void MostrarPoligono(const Poligono& pol){
     }
 }
 
-void MostrarPunto(const Punto& p){
+void MostrarPunto(Punto p){
 std::cout <<"(" <<p.x <<";" <<p.y <<")" <<"\n";
 }
 
@@ -75,39 +34,80 @@ void AddVertice (Poligono& pol, const Punto& pun){
     pol.puntos.at( pol.n ).y = pun.y;
     pol.n ++;
 }
+
+//Funciones Extraer
+
 bool ExtraerColor(std::istream& in, Color& c){
-    char coma;
-    in >> c.r;
-    in >> coma;
-    in >> c.g;
-    in >> coma;
-    in >> c.b;
-    std::cout << GetHtmlrgb(c) <<"\n";
+    short aux;
+    in >> aux;
+    c.r = aux;
+    in >> aux;
+    c.g = aux;
+    in >> aux;
+    c.b = aux;
     return bool (in);
 }
 
 bool ExtraerPunto(std::istream& in, Punto& p){
-    char car;
     in >> p.x;
-    in >> car;
     in >> p.y;
-    in >> car;
-    MostrarPunto(p);
+    
    return bool (in);
 }
 
 bool ExtraerPuntos(std::istream& in, Poligono& pol){
-    unsigned i{0};
-    Punto p;
-    while(ExtraerPunto(in, p)){
+    
+    pol.n = 0;
+    for(Punto p; ExtraerPunto(in, p);){
         AddVertice (pol, p);
     }
+    
 return bool (in);
 }
 
-void ExtraerPoligono(std::istream& in, Poligono& pol){
-    char car;
+bool ExtraerPoligono(std::istream& in, Poligono& pol){
+    
     ExtraerColor(in, pol.c);
-    in >> car;
     ExtraerPuntos(in, pol);
+    return ExtraerSeparador(in);
+
+}
+
+bool ExtraerPoligonos(std::istream& in){
+   for (Poligono pol; ExtraerPoligono(in, pol); )
+     MostrarPoligono(pol);
+    
+   return not in.fail();
+}
+
+
+
+//Funciones Enviar
+
+bool EnviarPunto(std::ostream& os, Punto p){
+ os << p.x << ' ' << p.y << ' ' ;
+ return bool (os);
+}
+
+bool EnviarColor(std::ostream& os, Color c){
+    os << static_cast <int> (c.r) << ' ' << static_cast <int> (c.g) << ' ' << static_cast <int> (c.b) << ' ' ; //El static cast es necesario para que interprete a las coordenadas rgb como numeros y no como caracteres ya que al ocupar 1 byte se considera como un caracter en codigo ascii de forma automática
+    return bool (os);
+}
+
+bool EnviarPoligono(std::ostream& os, const Poligono& pol){
+    EnviarColor(os, pol.c);
+    unsigned i{0};
+    while (i < pol.n){
+        EnviarPunto(os, pol.puntos.at(i));
+        ++i;
+    }
+    os << "# " <<"\n" ;
+    return bool (os);
+}
+
+bool ExtraerSeparador (std::istream& in ){
+    in.clear (); //Limpia el estado del flujo de entrada, en otro caso el booleano seguia dando falso, lo que no permitía extraer varios poligonos
+    char c{'@'}; //Inicializo la variable con un valor distinto para poder verificar que se extrae el caracter deseado
+    in >> c;
+    return c == '#' and in;
 }
