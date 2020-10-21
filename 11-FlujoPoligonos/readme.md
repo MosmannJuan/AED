@@ -25,8 +25,8 @@
 #### Representación visual (En PseudoCódigo)
 
 * Flujo de Entrada
-* While (pueda extraerpoligono): 
-* ExtraerPoligono (ExtraerColor + ExtraerPuntos(while(pueda extraer un punto): ExtraerPunto)
+* Mientras pueda extraerpoligono: 
+* ExtraerPoligono (ExtraerColor + ExtraerPuntos(mientras pueda extraer un punto): ExtraerPunto)
 
 ## Problemas encontrados: 
 * Al usar el tipo de datos uint_8 para las coordenadas del color, ExtraerColor solo tomaba un digito de cada numero (Solucionado extrayendo a las coordenadas como int y asignandolas a cada parte del color, de esta forma se realiza el cambio de tipo de dato de forma automática, para enviarlos o mostrarlos, es necesario solicitar que lo hagan en forma de entero, en caso contrario, c++ lo considera como un caracter debido a que ocupa 1 byte).
