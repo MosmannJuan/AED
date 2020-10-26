@@ -8,7 +8,11 @@
 # Etapa 1: Análisis del problema.
 ## Enunciado: Desarrollar un programa con funciones que envíen y reciban a traves de flujos (estándar o alguno en particular) una cantidad indefinida de polígonos.
 
-## *Hipótesis de trabajo:* Se utilizarán las definiciones anteriormente usadas de tipo Punto, tipo Color y tipo Poligono. Se desarrollará la solución del problema mediante la definición de funciones. Para las pruebas se mostrará por pantalla el poligono extraído utilizando una función, verificando que conicida con los polígonos enviados de forma automática y con los polígonos escritos manualmente en archivos distintos.
+## Edit: Se agregó la tarea de lograr que lea de un flujo de entrada una cantidad indefinida de polígonos y que, aquellos que cumplan con una condición, sean enviados a otro archivo.
+
+## *Hipótesis de trabajo:* Se utilizarán las definiciones anteriormente usadas de tipo Punto, tipo Color y tipo Poligono. Se desarrollará la solución del problema mediante la definición de funciones. Para las pruebas se mostrará por pantalla el poligono extraído utilizando una función, verificando que conicida con los polígonos enviados de forma automática y con los polígonos escritos manualmente en archivos distintos. 
+
+## Para el extraer y enviar polígonos con una condicion, se tomará siempre que dicha condición será que tengan un perímetro mayor a uno dado por el usuario. 
 
 # **Etapa 2: Diseño de la solución**
 
@@ -40,3 +44,4 @@
 #### *Observaciones:* 
 * Se adjunta el archivo datos2.txt ya que es el archivo manual utilizado, se podría modificar tanto como se quiera siempre que se respete el nombre del archivo y el formato para los poligonos y el programa funcionará sin problemas.
 * No se adjunta el archivo datos.txt ya que al ejecutar el programa, el mismo se creará de forma automática.
+* Se adjuntan los archivos poligonosaflitrar.txt y resultados.txt usados para las pruebas de la función IOPoligonosConCondicion().
