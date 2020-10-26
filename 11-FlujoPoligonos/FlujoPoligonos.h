@@ -43,3 +43,11 @@ bool EnviarColor(std::ostream&, Color); //Envia las componentes de un color por 
 bool EnviarPoligono(std::ostream&, const Poligono&); //Envia un color y una serie de puntos correspondientes a un poligono por un flujo de salida
 
 bool ExtraerSeparador (std::istream& in ); //Limpia el flujo de entrada y extrae el caracter '#' utilizado para separar los poligonos
+
+double GetPerimetro (const Poligono&); //Retorna un double correspondiente al perímetro del polígono ingresado
+
+double GetDistancia(Punto,  Punto); //Retorna el valor de la distancia entre dos puntos
+
+Punto RestarPuntos(Punto , Punto); //Retorna el punto resultado de restar ambos
+
+bool IOPoligonoCondicionado (std::istream&, std::ostream&, double);

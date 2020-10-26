@@ -40,5 +40,13 @@ int main(){
     ExtraerPoligonos(inManual);
  
     ExtraerPoligonos(std::cin); //Usa el flujo de entrada estándar (teclado)
-   
+
+    std::ofstream out;
+    std::ifstream inCond ("poligonosafiltrar.txt");
+    
+    out.open("resultados.txt"); 
+    IOPoligonoCondicionado(inCond, out, 20);
+    out.close();
+
+    std::cout << "Fin.";
 }

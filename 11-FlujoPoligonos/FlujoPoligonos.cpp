@@ -4,6 +4,7 @@ Definición de funciones
 Leer poligonos desde un archivo */
 
 #include "FlujoPoligonos.h"
+#include <cmath>
 
 void MostrarPoligono(const Poligono& pol){
     std::cout <<"El poligono posee " << pol.n <<" lados." <<"\n";
@@ -32,7 +33,7 @@ std::string GetHtmlrgb (Color c){
 void AddVertice (Poligono& pol, const Punto& pun){
     pol.puntos.at( pol.n ).x = pun.x;
     pol.puntos.at( pol.n ).y = pun.y;
-    pol.n ++;
+    ++ pol.n;
 }
 
 //Funciones Extraer
@@ -110,4 +111,36 @@ bool ExtraerSeparador (std::istream& in ){
     char c{'@'}; //Inicializo la variable con un valor distinto para poder verificar que se extrae el caracter deseado
     in >> c;
     return c == '#' and in;
+}
+
+//Funciones para poder extraer y enviar polígonos con condición (perimetro mayor a uno dado)
+
+Punto RestarPuntos(Punto m, Punto s){
+    Punto r;
+    r.x = m.x - s.x;
+    r.y = m.y - s.y;
+    return r;
+}
+
+double GetDistancia(Punto o, Punto e){
+    Punto v;
+    double r;
+    v = RestarPuntos(e, o);
+    r = sqrt(v.x * v.x + v.y * v.y);
+    return r;
+}
+
+double GetPerimetro (const Poligono& pol){
+double resultado = 0;
+for (int i = pol.n - 1; i > 0 ; i--){
+    resultado = resultado + GetDistancia(pol.puntos.at(i), pol.puntos.at(i-1));
+}
+return resultado + GetDistancia(pol.puntos.at(pol.n-1), pol.puntos.at(0));
+}
+
+bool IOPoligonoCondicionado (std::istream& in, std::ostream& out, double perimcond){
+     for (Poligono pol; ExtraerPoligono(in, pol); )
+     if(GetPerimetro(pol) > perimcond) EnviarPoligono(out, pol);
+    
+   return not in.fail();
 }
