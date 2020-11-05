@@ -1,6 +1,7 @@
 # Poligono:
 
 * Primera implementación (Utilizando array para almacenar puntos de forma estática, preestableciendo un máximo)
+
 Polígono = { pol = n, p1, p2, ..., p20, c / n ϵ N con n ϵ [3,20]; p1, p2, ..., p20 ϵ Punto; c ϵ Color} 
 
 * Segunda implementación (Utilizando punteros para poder almacenar los puntos de forma dinámica, para lo cual se debió definir una estructura adicional Nodo)
