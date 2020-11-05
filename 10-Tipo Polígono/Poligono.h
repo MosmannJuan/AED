@@ -6,17 +6,22 @@ Curso K1051
 #pragma once
 #include <array>
 #include <cstdint>
+#include <cstring>
 
 struct Punto{double x,y;};
 
 struct Color {uint8_t r, g, b ;};
 
+struct Nodo{
+    Punto p;
+    Nodo* SigNodo;
+};
+
 struct Poligono {
-    unsigned n;
-    std::array <Punto, 20> puntos;
+    Nodo* PrimerPunto;
     Color c;};
 
- //Declaración de colores
+//Declaración de colores
 
 const Color rojo {255, 0, 0};
 
@@ -35,6 +40,7 @@ const Color blanco = {255, 255, 255};
 const Color negro = {0, 0, 0};
 
 // Funciones de Polígono
+
 void AddVertice (Poligono&, const Punto&); //Agrega al final del array de puntos del poligono el punto ingresado en el argumento
 
 Punto GetVertice (const Poligono&, const unsigned&); //Retorna el valor del Punto del poligono ubicado en la posicion indicada 
@@ -49,6 +55,8 @@ double GetPerimetro (const Poligono&); //Retorna un double correspondiente al pe
 
 bool IsIgual (const Poligono&, const Poligono&); //Retorna un booleano true si los dos polígonos ingresados son iguales o false si no lo son
 
+void MostrarPoligono(const Poligono&);
+
 //Funciones necesarias de Punto
 double GetDistancia(const Punto&, const Punto&); //Necesaria para la función de calculo de perimetro de poligonos
 
@@ -56,5 +64,10 @@ bool IsIgualPunto (const Punto&, const Punto&); //Necesaria para la función de 
 
 Punto RestarPuntos(const Punto& , const Punto&); //Necesaria para la función GetDistancia
 
+void MostrarPunto (Punto);
+
 //Funciones necesarias de Color
 bool IsIgualColor (const Color&, const Color&); //Necesaria para la función de comparación de polígonos
+
+std::string GetHtmlrgb (const Color&); //Retorna una cadena correspondiente al color en formato "rgb(r,g,b)"
+
