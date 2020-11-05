@@ -17,3 +17,8 @@
 3. Implementar el tipo.
 
 ## Hipótesis de trabajo: Asumimos para la definición del máximo de lados del polígono que tendrá un límite de 20 lados (isodecágono). Se tendrán en cuenta para la resolución las anteriores definiciones de Tipo Punto (https://github.com/MosmannJuan/AED/tree/master/08-Tipo%20Punto)  y Tipo Color (https://github.com/MosmannJuan/AED/tree/master/09-Tipo%20Color).
+
+## Edit 5/11 (Implementación de punteros):
+
+## Al hacer uso de punteros, el almacenamiento de puntos se transforma en dinámico, razón por la cual no habrá un límite de puntos a almacenar. 
+## Al poseer ya una función encargada de leer poligonos de cualquier flujo (Ver en el siguiente link: https://github.com/MosmannJuan/AED/tree/master/11-FlujoPoligonos), se eliminó la función LeerPoligono de este archivo ya que resultaba redundante e incluso más restrictiva ya que solamente podía leer del flujo estándar.
